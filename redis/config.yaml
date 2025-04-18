@@ -28,4 +28,4 @@ schema:
   allow_empty_password: bool
   password: str
   extra_flags: str
-image: bitnami/redis:{arch}
+image: ghcr.io/bitnami/redis:{arch}

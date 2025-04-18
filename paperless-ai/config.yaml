@@ -31,4 +31,4 @@ schema:
   openai_api_key: str
   ollama_url: str
   model: list(mistral|llama|phi3|gemma2)?
-image: clusterzx/paperless-ai:{arch}
+image: ghcr.io/clusterzx/paperless-ai:{arch}

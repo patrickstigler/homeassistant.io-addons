@@ -46,4 +46,4 @@ schema:
   ocr_mode: str
   consumer_polling: int
   secret_key: str
-image: paperlessngx/paperless-ngx:latest
+image: ghcr.io/paperless-ngx/paperless-ngx:{arch}

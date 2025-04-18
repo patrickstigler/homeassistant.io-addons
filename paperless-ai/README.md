@@ -12,6 +12,10 @@ This is the Home Assistant addon configuration for Paperless-AI, an intelligent 
 - Document content understanding
 - Integration with Paperless-ngx
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/clusterzx/paperless-ai/main/docs/assets/logo.png" alt="Paperless-AI Logo" width="150" height="150" />
+</p>
+
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/clusterzx/paperless-ai) ![Docker Pulls](https://img.shields.io/docker/pulls/clusterzx/paperless-ai) ![GitHub User's stars](https://img.shields.io/github/stars/clusterzx) ![GitHub License](https://img.shields.io/github/license/clusterzx/paperless-ai?cacheSeconds=1)
 https://github.com/clusterzx/paperless-ai
 # Paperless-AI

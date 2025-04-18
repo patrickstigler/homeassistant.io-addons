@@ -18,4 +18,4 @@ options:
   log_level: info
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
-image: ghcr.io/paperless-ngx/tika:{arch}
+image: ghcr.io/apache/tika:{arch}

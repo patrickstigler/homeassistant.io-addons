@@ -22,7 +22,7 @@ schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   disable_javascript: bool
   allow_list: str
-image: gotenberg/gotenberg:{arch}
+image: ghcr.io/gotenberg/gotenberg:{arch}
 args:
   - gotenberg
   - --chromium-disable-javascript=true
