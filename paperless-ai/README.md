@@ -1,4 +1,4 @@
-[![Donate][donation-badge]](https://ko-fi.com/patrickstigler)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/patrickstigler)
 
 *Note: This donation badge is for the Home Assistant addon repository publication and not directly related to the Paperless-AI project.*
 

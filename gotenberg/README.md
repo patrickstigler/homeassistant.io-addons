@@ -19,7 +19,7 @@
 **Gotenberg** provides a developer-friendly API to interact with powerful tools like Chromium and LibreOffice for converting
 numerous document formats (HTML, Markdown, Word, Excel, etc.) into PDF files, and more!
 
-[![Donate][donation-badge]](https://ko-fi.com/patrickstigler)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/patrickstigler)
 
 *Note: This donation badge is for the Home Assistant addon repository publication and not directly related to the Gotenberg project.*
 

@@ -1,4 +1,3 @@
-[![Donate][donation-badge]](https://ko-fi.com/patrickstigler)
 # homeassistant.io-addons
 My homeassistant.io add-on's
 
@@ -49,3 +48,5 @@ This combination of services provides what I believe to be the best solution for
 5. **Self-Hosted**: Complete control over your data and privacy
 6. **Extensible**: Can be enhanced with additional features as needed
 7. **High Performance**: Redis ensures fast data access and processing
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/patrickstigler)
