@@ -3,7 +3,7 @@ addons:
   paperless-ngx:
     repository: homeassistant.io-addons/paperless-ngx
     target: paperless-ngx
-    image: ghcr.io/paperless-ngx/paperless-ngx{arch}
+    image: paperlessngx/paperless-ngx:latest
   paperless-ai:
     repository: homeassistant.io-addons/paperless-ai
     target: paperless-ai
