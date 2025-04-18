@@ -3,20 +3,20 @@ addons:
   paperless-ngx:
     repository: homeassistant.io-addons/paperless-ngx
     target: paperless-ngx
-    image: paperlessngx/paperless-ngx:latest
+    image: ghcr.io/paperless-ngx/paperless-ngx:{arch}
   paperless-ai:
     repository: homeassistant.io-addons/paperless-ai
     target: paperless-ai
-    image: clusterzx/paperless-ai
+    image: ghcr.io/clusterzx/paperless-ai:{arch}
   gotenberg:
     repository: homeassistant.io-addons/gotenberg
     target: gotenberg
-    image: gotenberg/gotenberg
+    image: ghcr.io/gotenberg/gotenberg:{arch}
   redis:
     repository: homeassistant.io-addons/redis
     target: redis
-    image: bitnami/redis
+    image: ghcr.io/bitnami/redis:{arch}
   apache-tika-server:
     repository: homeassistant.io-addons/apache-tika-server
     target: apache-tika-server
-    image: ghcr.io/paperless-ngx/tika
+    image: ghcr.io/apache/tika:{arch}
