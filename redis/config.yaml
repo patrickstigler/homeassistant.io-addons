@@ -1,0 +1,31 @@
+name: Redis
+version: "latest"
+slug: redis
+description: An open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker
+url: https://redis.io/
+startup: services
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+map:
+  - data:rw
+ports:
+  6379/tcp: 6379
+ports_description:
+  6379/tcp: Redis port
+hassio_api: true
+backup_exclude:
+  - '**/data/**'
+options:
+  log_level: info
+  allow_empty_password: true
+  password: ""
+  extra_flags: "--auto-aof-rewrite-percentage 100 --auto-aof-rewrite-min-size 64mb"
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  allow_empty_password: bool
+  password: str
+  extra_flags: str
+image: bitnami/redis:{arch}

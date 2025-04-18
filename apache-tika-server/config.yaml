@@ -1,0 +1,21 @@
+name: Apache Tika Server
+version: "latest"
+slug: apache-tika-server
+description: A toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries
+url: https://tika.apache.org/
+startup: services
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+ports:
+  9998/tcp: 9998
+ports_description:
+  9998/tcp: Tika Server port
+hassio_api: true
+options:
+  log_level: info
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+image: ghcr.io/paperless-ngx/tika:{arch}

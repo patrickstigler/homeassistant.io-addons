@@ -1,0 +1,29 @@
+name: Gotenberg
+version: "7.10.0"
+slug: gotenberg
+description: A developer-friendly API to interact with powerful tools like Chromium and LibreOffice for converting numerous document formats into PDF files
+url: https://gotenberg.dev/
+startup: services
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+ports:
+  3000/tcp: 3000
+ports_description:
+  3000/tcp: Gotenberg API port
+hassio_api: true
+options:
+  log_level: info
+  disable_javascript: true
+  allow_list: file:///tmp/.*
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  disable_javascript: bool
+  allow_list: str
+image: gotenberg/gotenberg:{arch}
+args:
+  - gotenberg
+  - --chromium-disable-javascript=true
+  - --chromium-allow-list=file:///tmp/.*

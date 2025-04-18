@@ -1,0 +1,34 @@
+name: Paperless-AI
+version: "latest"
+slug: paperless-ai
+description: An automated document analyzer for Paperless-ngx using OpenAI API and Ollama (Mistral, llama, phi 3, gemma 2) to automatically analyze and tag your documents
+url: https://github.com/clusterzx/paperless-ai
+webui: http://[HOST]:[PORT:3233]
+startup: services
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+map:
+  - data:rw
+ports:
+  3233/tcp: 3233
+ports_description:
+  3233/tcp: Paperless-AI web interface
+hassio_api: true
+backup_exclude:
+  - '**/data/**'
+options:
+  log_level: info
+  paperless_url: http://[PAPERLESS_HOST]:[PAPERLESS_PORT]
+  openai_api_key: ""
+  ollama_url: http://[OLLAMA_HOST]:[OLLAMA_PORT]
+  model: mistral
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  paperless_url: str
+  openai_api_key: str
+  ollama_url: str
+  model: list(mistral|llama|phi3|gemma2)?
+image: clusterzx/paperless-ai:{arch}

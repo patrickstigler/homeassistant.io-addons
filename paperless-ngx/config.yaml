@@ -1,0 +1,49 @@
+name: Paperless-ngx
+version: "1.17.4"
+slug: paperless-ngx
+description: Document management system that transforms physical documents into a searchable online archive
+url: https://github.com/paperless-ngx/paperless-ngx
+webui: http://[HOST]:[PORT:8000]
+startup: services
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+map:
+  - data:rw
+  - media:rw
+  - consume:rw
+  - export:rw
+ports:
+  8000/tcp: 8000
+ports_description:
+  8000/tcp: Paperless-ngx web interface
+hassio_api: true
+backup_exclude:
+  - '**/data/**'
+  - '**/media/**'
+  - '**/consume/**'
+options:
+  log_level: info
+  redis_host: redis://[REDIS_HOST]:6379
+  ocr_language: eng
+  time_zone: Europe/Berlin
+  tika_enabled: false
+  tika_endpoint: ""
+  tika_gotenberg_endpoint: ""
+  ocr_mode: redo
+  consumer_polling: 0
+  secret_key: ""
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  redis_host: str
+  ocr_language: str
+  time_zone: str
+  tika_enabled: bool
+  tika_endpoint: str
+  tika_gotenberg_endpoint: str
+  ocr_mode: str
+  consumer_polling: int
+  secret_key: str
+image: ghcr.io/paperless-ngx/paperless-ngx/{arch}
